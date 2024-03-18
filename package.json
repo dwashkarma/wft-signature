@@ -7,9 +7,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/declaration.d.ts",
+  "types": "dist/typescript/src/declaration.d.ts",
   "scripts": {
-    "rollup": "rollup -c --bundleConfigAsCjs"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "author": "DwashKarma",
   "license": "ISC",

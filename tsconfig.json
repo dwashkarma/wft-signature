@@ -107,16 +107,17 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
 
     "jsx": "react",
-    "module": "ESNext",
+    "module": "ES2022",
     "declaration": true,
-    "declarationDir": "types",
+    "declarationDir": "dist/types",
     "sourceMap": true,
     // "outDir": "dist",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true
   },
-  
-  "include": ["./src/**/*", "declaration.d.ts"],
-  "exclude": ["**/*.jpg", "**/*.png", "**/*.gif", "**/*.svg", "**/*.jpeg"]
+  "include": ["src/**/*", "types"],
+
+  // "include": ["./src/**/*", "declaration.d.ts"],
+  // "exclude": ["**/*.jpg", "**/*.png", "**/*.gif", "**/*.svg", "**/*.jpeg"]
 }

@@ -1,1 +1,1 @@
-export * from "./Components/LogoComponent/Logo";
+export * from "./Components/index";
