@@ -6,7 +6,6 @@ interface ImageProps {
   height: number;
 }
 
-const Logo: React.FC<ImageProps> = ({ src = Images, width, height }) => (
+export const Logo: React.FC<ImageProps> = ({ src = Images, width, height }) => (
   <img src={src} alt="Library Image" width={width} height={height} />
 );
-export default Logo;
