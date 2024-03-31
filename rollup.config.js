@@ -7,7 +7,7 @@ import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json";
 import copy from "rollup-plugin-copy";
 import svelte from "rollup-plugin-svelte";
-import { preprocess } from "svelte-preprocess";
+import preprocess from "svelte-preprocess";
 export default [
   {
     input: "src/index.ts",
@@ -39,13 +39,21 @@ export default [
       }),
     ],
     // Include Svelte files in the bundle
-    // watch: {
-    //   include: "src/**",
-    // },
+    watch: {
+      include: "src/**",
+    },
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/declaration.d.ts", format: "cjs" }],
     plugins: [dts()],
+  },
+  {
+    input: "src/Components/index.ts", // Adjust the input path accordingly
+    output: {
+      dir: "dist/esm", // Adjust the output directory accordingly
+      format: "esm",
+      sourcemap: true,
+    },
   },
 ];

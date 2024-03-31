@@ -1,3 +1,2 @@
 export { Logo } from "./React/Logo";
-export { SvelteComponent } from "./Svelte/SvelteLogo.svelte";
-
+export  { SvelteLogo}  from './Svelte/SvelteLogo.svelte'

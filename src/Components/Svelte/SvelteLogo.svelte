@@ -1,5 +1,8 @@
-<script>
+<script context="module">
   import Images from "../../assets/WFT.jpg";
+</script>
+
+<script>
   export let width;
   export let height;
 </script>
