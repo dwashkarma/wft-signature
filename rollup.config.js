@@ -6,6 +6,8 @@ import image from "@rollup/plugin-image";
 import PeerDepsExternalPlugin from "rollup-plugin-peer-deps-external";
 import packageJson from "./package.json";
 import copy from "rollup-plugin-copy";
+import svelte from "rollup-plugin-svelte";
+// import { preprocess } from "svelte-preprocess";
 export default [
   {
     input: "src/index.ts",
@@ -32,6 +34,7 @@ export default [
       image(),
       PeerDepsExternalPlugin(),
       copy({ targets: [{ src: "src/assets/*.jpg", dest: "dist/assets" }] }),
+      svelte(),
     ],
   },
   {
