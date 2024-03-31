@@ -111,6 +111,7 @@
     "declaration": true,
     "declarationDir": "dist/types",
     "sourceMap": true,
+   
     // "outDir": "dist",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true,
